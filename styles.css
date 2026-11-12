@@ -1,0 +1,49 @@
+/* Custom LMS Styling */
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+}
+
+.active-tab {
+  background-color: #4f46e5 !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.25);
+}
+
+.modal-backdrop {
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+
+/* Toast animation */
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.toast-enter {
+  animation: slideInRight 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Drag & Drop Highlight */
+.drag-over {
+  border-color: #4f46e5 !important;
+  background-color: #eef2ff !important;
+}
+
+/* Progress bar animations */
+.progress-bar-fill {
+  transition: width 0.6s ease-in-out;
+}
